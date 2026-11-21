@@ -11,6 +11,7 @@
       hero_title: 'Sua tela inicial sem ruído visual, feita para uma mão só.',
       hero_subtitle:
         'NotLauncher substitui grades lotadas de ícones por uma lista limpa em OLED preto puro, onda alfabética centralizada, gestos rápidos e páginas exclusivas para widgets oficiais do Android.',
+      hero_cta_download: 'Baixar APK',
       hero_cta_primary: 'Testar Wave Interativa',
       
       hero_note: 'Armazenamento local exclusivo · Nenhum dado enviado a servidores.',
@@ -88,6 +89,7 @@
       hero_title: 'A quiet home screen crafted for one-handed reach.',
       hero_subtitle:
         'NotLauncher replaces cluttered icon grids with a pure OLED black list, centered alphabetical Wave scrubbing, swipe-left app actions, and clean Android widget pages.',
+      hero_cta_download: 'Download APK',
       hero_cta_primary: 'Try Interactive Wave',
       
       hero_note: 'Local-only storage · Zero data sent to external servers.',
