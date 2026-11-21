@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotLauncher — Minimalist Android Launcher</title>
+    <meta
+      name="description"
+      content="Pure black OLED minimalist Android launcher with a centered alphabetical wave, quick swipe actions and native widgets on a clean screen."
+    />
+    <meta property="og:title" content="NotLauncher — Minimalist Android Launcher" />
+    <meta
+      property="og:description"
+      content="Pure black OLED minimalist Android launcher with a centered alphabetical wave, quick swipe actions and native widgets on a clean screen."
+    />
+    <meta property="og:url" content="https://issoeocio.github.io/notlauncher/" />
+    <meta property="og:image" content="https://issoeocio.github.io/notlauncher/assets/hero-showcase.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://issoeocio.github.io/notlauncher/assets/hero-showcase.jpg" />
+    <link rel="canonical" href="https://issoeocio.github.io/notlauncher/" />
+    <link rel="icon" type="image/jpeg" href="./assets/app-icon.jpg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "NotLauncher",
+        "operatingSystem": "Android",
+        "applicationCategory": "UtilitiesApplication",
+        "url": "https://issoeocio.github.io/notlauncher/",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container topbar">
+        <a href="./index.html" class="brand-wordmark">NotLauncher</a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#recursos" data-i18n="nav_features">Features</a>
+          <a href="#experiencia" data-i18n="nav_experience">Experience</a>
+          <a href="#screenshots" data-i18n="nav_shots">Screenshots</a>
+          <a href="#especificacoes" data-i18n="nav_specs">Specs</a>
+        </nav>
+
+        <a
+          href="https://github.com/issoeocio/notlauncher/releases/latest/download/notlauncher.apk"
+          class="topbar-cta"
+          data-i18n="hero_cta_download"
+        >Download APK</a>
+
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-expanded="false"
+          aria-controls="mobileDrawer"
+          aria-label="Open menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="17" x2="20" y2="17" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#recursos" data-i18n="nav_features">Features</a>
+        <a href="#experiencia" data-i18n="nav_experience">Experience</a>
+        <a href="#screenshots" data-i18n="nav_shots">Screenshots</a>
+        <a href="#especificacoes" data-i18n="nav_specs">Specs</a>
+        <a
+          href="https://github.com/issoeocio/notlauncher/releases/latest/download/notlauncher.apk"
+          data-i18n="hero_cta_download"
+        >Download APK</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div>
+                <div class="meta-line">
+                  <span>Android Launcher</span>
+                  <span aria-hidden="true">·</span>
+                  <span data-i18n="meta_free">Ad-free</span>
+                  <span aria-hidden="true">·</span>
+                  <span class="mono">app.notlauncher</span>
+                </div>
+
+                <h1 class="hero-title" style="margin-top: 18px" data-i18n="hero_title">A quiet home screen crafted for one-handed reach.</h1>
+
+                <p class="hero-subtitle" style="margin-top: 18px" data-i18n="hero_subtitle">NotLauncher replaces cluttered icon grids with a pure OLED black list, centered alphabetical Wave scrubbing, swipe-left app actions, and clean Android widget pages.</p>
+              </div>
+
+              <div>
+                <div class="hero-actions">
+                  <a href="https://github.com/issoeocio/notlauncher/releases/latest/download/notlauncher.apk" class="btn-primary" data-i18n="hero_cta_download">Download APK</a>
+                  <a href="#experiencia" class="btn-secondary" data-i18n="hero_cta_primary">Try Interactive Wave</a>
+                  
+                </div>
+
+                <div class="hero-utility-row" style="margin-top: 28px">
+                  <span class="meta-line" data-i18n="hero_note">Local-only storage · Zero data sent to external servers.</span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-media">
+              <img
+                src="./assets/hero-showcase.jpg"
+                alt="Smartphone showing the pure black minimalist NotLauncher home screen"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+
+          <div class="facts-strip">
+            <div class="fact-cell">
+              <div class="fact-value mono">0 B</div>
+              <div class="fact-label" data-i18n="fact_1">Telemetry or ad trackers</div>
+            </div>
+            <div class="fact-cell">
+              <div class="fact-value mono">1 gesture</div>
+              <div class="fact-label" data-i18n="fact_2">Thumb access from A to Z</div>
+            </div>
+            <div class="fact-cell">
+              <div class="fact-value mono">OLED</div>
+              <div class="fact-label" data-i18n="fact_3">True black OLED surface</div>
+            </div>
+            <div class="fact-cell">
+              <div class="fact-value mono">Android 7+</div>
+              <div class="fact-label" data-i18n="fact_4">Supports Android 7 to API 36</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="recursos">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="features_title">Built around focus, speed, and ergonomics</h2>
+            <p class="section-desc" data-i18n="features_desc">Every gesture and screen follows native Android behavior with zero chrome.</p>
+          </div>
+
+          <div class="bento-grid">
+            <article class="bento-card bento-span-2">
+              <div>
+                <h3 class="bento-title" data-i18n="f1_title">01. Centered alphabetical Wave</h3>
+                <p class="bento-text" data-i18n="f1_desc">Glide your thumb along the edge to scan every installed app instantly. The list centers the active entry with smooth 60 fps focus scaling and optional launch on release.</p>
+              </div>
+              <div class="bento-meta" data-i18n="f1_meta">Virtualized list · Right or left edge placement</div>
+            </article>
+
+            <article class="bento-card">
+              <div>
+                <h3 class="bento-title" data-i18n="f2_title">02. Swipe-left app actions</h3>
+                <p class="bento-text" data-i18n="f2_desc">Swipe any row left to open a Material action box with Pin to Home and Uninstall powered by the official Android removal flow.</p>
+              </div>
+              <div class="bento-meta" data-i18n="f2_meta">Clean rows · No inline trash icons cluttering text</div>
+            </article>
+
+            <article class="bento-card">
+              <div>
+                <h3 class="bento-title" data-i18n="f3_title">03. Distraction-free widget pages</h3>
+                <p class="bento-text" data-i18n="f3_desc">Swipe left from Home to open your official Android widgets with zero top toolbars or footer hints. Long press anywhere to add or remove widgets.</p>
+              </div>
+              <div class="bento-meta" data-i18n="f3_meta">Long-press anywhere · Official AppWidgetHost integration</div>
+            </article>
+
+            <article class="bento-card bento-span-2">
+              <div>
+                <h3 class="bento-title" data-i18n="f4_title">04. Privacy enforced by architecture</h3>
+                <p class="bento-text" data-i18n="f4_desc">No ads, no sign-in walls, and no server uploads. Preferences, favorites, quick notes, and widget layouts remain strictly on your device.</p>
+              </div>
+              <div class="bento-meta" data-i18n="f4_meta">Scoped <queries> manifest · No QUERY_ALL_PACKAGES permission</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="experiencia">
+        <div class="container">
+          <div class="experience-grid">
+            <div class="demo-controls">
+              <div class="section-header" style="margin-bottom: 0">
+                <h2 class="section-title" data-i18n="demo_title">Explore the core interactions</h2>
+                <p class="section-desc" data-i18n="demo_desc">Switch between screens and scrub the A–Z rail or tap an app row to preview the swipe-left Pin and Uninstall controls.</p>
+              </div>
+
+              <div class="segmented-tabs" role="tablist" aria-label="NotLauncher screens">
+                <button type="button" class="seg-tab active" data-tab="wave" data-i18n="tab_wave">A–Z Wave</button>
+                <button type="button" class="seg-tab" data-tab="home" data-i18n="tab_home">Home Screen</button>
+                <button type="button" class="seg-tab" data-tab="widgets" data-i18n="tab_widgets">Widgets</button>
+              </div>
+
+              <ul class="demo-notes">
+                <li>
+                  <strong data-i18n="hint_1_title">Drag the A–Z rail or scroll up to exit</strong>
+                  <span data-i18n="hint_1_desc">Focused apps center with subtle scale; scroll or swipe up to return Home cleanly.</span>
+                </li>
+                <li>
+                  <strong data-i18n="hint_2_title">Swipe left or tap any row</strong>
+                  <span data-i18n="hint_2_desc">Reveal Pin and Uninstall buttons powered by Android’s native removal flow.</span>
+                </li>
+                <li>
+                  <strong data-i18n="hint_3_title">Interactive clean widgets canvas</strong>
+                  <span data-i18n="hint_3_desc">Test the live Focus Timer and Quick Notes with zero toolbars or extra chrome.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="phone-frame" aria-label="Interactive NotLauncher simulation">
+              <div class="phone-statusbar mono">
+                <span id="simClock">10:09</span>
+                <span>5G · 92%</span>
+              </div>
+
+              <div class="phone-screen" id="phoneScreen"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="screenshots">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n="shots_title">NotLauncher Screens</h2>
+            <p class="section-desc" data-i18n="shots_desc">A visual tour of the current release: quiet OLED Home, centered A–Z Wave, swipe-left Pin & Uninstall tray, and clean widget pages.</p>
+          </div>
+
+          <div class="shots-grid">
+            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/hero-showcase.jpg" data-shot-title="shot1_title" data-shot-desc="shot1_desc">
+              <div class="shot-media">
+                <img
+                  src="./assets/hero-showcase.jpg"
+                  alt="Minimalist NotLauncher home screen in pure OLED black"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <figcaption class="shot-caption">
+                <h3 data-i18n="shot1_title">01. OLED Home Screen</h3>
+                <p data-i18n="shot1_desc">Just your clock and essential pinned apps in pure contrast.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/wave-detail.jpg" data-shot-title="shot2_title" data-shot-desc="shot2_desc">
+              <div class="shot-media">
+                <img
+                  src="./assets/wave-detail.jpg"
+                  alt="Vertically centered alphabetical drawer with an enlarged item"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <figcaption class="shot-caption">
+                <h3 data-i18n="shot2_title">02. Centered A–Z Wave</h3>
+                <p data-i18n="shot2_desc">Focused entries stay centered on screen with smooth scale emphasis.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/shot-swipe.jpg" data-shot-title="shot3_title" data-shot-desc="shot3_desc">
+              <div class="shot-media">
+                <img
+                  src="./assets/shot-swipe.jpg"
+                  alt="Left swipe revealing Material buttons to pin and uninstall"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <figcaption class="shot-caption">
+                <h3 data-i18n="shot3_title">03. Swipe-Left Actions</h3>
+                <p data-i18n="shot3_desc">Swipe left to reveal Pin and Android-native Uninstall buttons.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/shot-widgets.jpg" data-shot-title="shot4_title" data-shot-desc="shot4_desc">
+              <div class="shot-media">
+                <img
+                  src="./assets/shot-widgets.jpg"
+                  alt="Clean widgets page showing only widget cards"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <figcaption class="shot-caption">
+                <h3 data-i18n="shot4_title">04. Clean Widget Pages</h3>
+                <p data-i18n="shot4_desc">Zero headers or footers; long-press anywhere to manage widgets.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="especificacoes">
+        <div class="container">
+          <div class="showcase-split">
+            <div class="showcase-photo">
+              <img
+                src="./assets/wave-detail.jpg"
+                alt="Detail of the NotLauncher alphabetical drawer with the focused item centered"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+
+            <div class="spec-panel">
+              <div>
+                <div class="brand-mark-row">
+                  <img
+                    src="./assets/app-icon.jpg"
+                    alt="Official minimalist NotLauncher icon"
+                    class="brand-icon-img"
+                    referrerpolicy="no-referrer"
+                  />
+                  <div>
+                    <h2 class="bento-title">NotLauncher for Android</h2>
+                    <p class="bento-text" style="margin-top: 4px" data-i18n="spec_subtitle">Built with Jetpack Compose and Material 3.</p>
+                  </div>
+                </div>
+
+                <table class="spec-table" style="margin-top: 24px">
+                  <tbody>
+                    <tr>
+                      <th data-i18n="spec_pkg">Package identifier</th>
+                      <td class="mono">app.notlauncher</td>
+                    </tr>
+                    <tr>
+                      <th data-i18n="spec_min">Minimum Android version</th>
+                      <td class="mono">Android 7.0 (API 24)</td>
+                    </tr>
+                    <tr>
+                      <th data-i18n="spec_target">Target SDK</th>
+                      <td class="mono">Android 16 (API 36)</td>
+                    </tr>
+                    <tr>
+                      <th data-i18n="spec_ads">Ads & trackers</th>
+                      <td data-i18n="spec_none">None</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="hero-actions">
+                <a href="#screenshots" class="btn-primary" data-i18n="nav_shots">Screenshots</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span class="brand-wordmark">NotLauncher</span>
+
+        <div class="footer-links">
+          <a href="#recursos" data-i18n="nav_features">Features</a>
+          <a href="#experiencia" data-i18n="nav_experience">Experience</a>
+          
+          <span>© 2026 NotLauncher</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="lightbox-backdrop" id="shotLightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+      <div class="lightbox-dialog">
+        <div class="lightbox-bar">
+          <div>
+            <h3 id="lightboxTitle" class="lightbox-title"></h3>
+            <p id="lightboxDesc" class="lightbox-desc"></p>
+          </div>
+          <div class="lightbox-actions">
+            <button type="button" class="lightbox-nav" id="lightboxPrev" aria-label="Previous screenshot">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <button type="button" class="lightbox-nav" id="lightboxNext" aria-label="Next screenshot">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+            <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close image">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img id="lightboxImg" src="" alt="" referrerpolicy="no-referrer" />
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
