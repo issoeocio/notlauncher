@@ -5,14 +5,14 @@
       nav_experience: 'Experiência',
       nav_shots: 'Capturas',
       nav_specs: 'Especificações',
-      nav_privacy: 'Privacidade',
-      nav_cta: 'Política de Privacidade',
+      
+      
       meta_free: 'Sem anúncios',
       hero_title: 'Sua tela inicial sem ruído visual, feita para uma mão só.',
       hero_subtitle:
         'NotLauncher substitui grades lotadas de ícones por uma lista limpa em OLED preto puro, onda alfabética centralizada, gestos rápidos e páginas exclusivas para widgets oficiais do Android.',
       hero_cta_primary: 'Testar Wave Interativa',
-      hero_cta_secondary: 'Ler Privacidade',
+      
       hero_note: 'Armazenamento local exclusivo · Nenhum dado enviado a servidores.',
       fact_1: 'Telemetria ou rastreamento',
       fact_2: 'Acesso de A a Z com o polegar',
@@ -48,15 +48,15 @@
       hint_2_desc: 'Simule o swipe para a esquerda e teste os botões Fixar e Desinstalar.',
       hint_3_title: 'Visualização de Widgets sem distrações',
       hint_3_desc: 'Apenas os seus widgets na tela, sem barras de título ou textos extras.',
-      spec_subtitle: 'Desenvolvido por Gilson Olegario com Jetpack Compose e Material 3.',
+      spec_subtitle: 'Construído com Jetpack Compose e Material 3.',
       spec_pkg: 'Identificador do pacote',
       spec_min: 'Compatibilidade mínima',
       spec_target: 'SDK de destino',
       spec_ads: 'Anúncios e rastreadores',
       spec_none: 'Nenhum',
-      spec_contact: 'Suporte oficial',
-      spec_privacy_btn: 'Abrir Política de Privacidade',
-      spec_contact_btn: 'Enviar E-mail',
+      
+      
+      
       shots_title: 'Telas atualizadas do NotLauncher',
       shots_desc:
         'Captura visual dos quatro pilares atuais: tela inicial silenciosa, Wave centralizada, swipe lateral para fixar ou desinstalar e página limpa de widgets.',
@@ -82,14 +82,14 @@
       nav_experience: 'Experience',
       nav_shots: 'Screenshots',
       nav_specs: 'Specifications',
-      nav_privacy: 'Privacy',
-      nav_cta: 'Privacy Policy',
+      
+      
       meta_free: 'Ad-free',
       hero_title: 'A quiet home screen crafted for one-handed reach.',
       hero_subtitle:
         'NotLauncher replaces cluttered icon grids with a pure OLED black list, centered alphabetical Wave scrubbing, swipe-left app actions, and clean Android widget pages.',
       hero_cta_primary: 'Try Interactive Wave',
-      hero_cta_secondary: 'Read Privacy Policy',
+      
       hero_note: 'Local-only storage · Zero data sent to external servers.',
       fact_1: 'Telemetry or ad trackers',
       fact_2: 'Thumb access from A to Z',
@@ -125,15 +125,15 @@
       hint_2_desc: 'Preview the swipe-left Material box with Pin and Uninstall buttons.',
       hint_3_title: 'Clean widgets canvas',
       hint_3_desc: 'Only your widgets on screen, without headers or extra chrome.',
-      spec_subtitle: 'Built by Gilson Olegario using Jetpack Compose and Material 3.',
+      spec_subtitle: 'Built with Jetpack Compose and Material 3.',
       spec_pkg: 'Package identifier',
       spec_min: 'Minimum Android version',
       spec_target: 'Target SDK',
       spec_ads: 'Ads & trackers',
       spec_none: 'None',
-      spec_contact: 'Support email',
-      spec_privacy_btn: 'Open Privacy Policy',
-      spec_contact_btn: 'Send Email',
+      
+      
+      
       shots_title: 'Updated NotLauncher Screens',
       shots_desc:
         'A visual tour of the current release: quiet OLED Home, centered A–Z Wave, swipe-left Pin & Uninstall tray, and clean widget pages.',
