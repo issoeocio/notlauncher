@@ -3,16 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NotLauncher — Minimalist Android Launcher</title>
-    <meta
-      name="description"
-      content="Minimalist Android launcher in OLED & Cream with a clickable Now line, A–Z Wave search, quick notes checklists, Hacker News Reader Mode, quiet daily quotas, and contextual modes."
-    />
-    <meta property="og:title" content="NotLauncher — Minimalist Android Launcher" />
-    <meta
-      property="og:description"
-      content="Minimalist Android launcher in OLED & Cream with a clickable Now line, A–Z Wave search, quick notes checklists, Hacker News Reader Mode, quiet daily quotas, and contextual modes."
-    />
+    <title>NotLauncher</title>
+    <meta name="description" content="NotLauncher" />
+    <meta property="og:title" content="NotLauncher" />
+    <meta property="og:description" content="NotLauncher" />
     <meta property="og:url" content="https://issoeocio.github.io/notlauncher/" />
     <meta property="og:image" content="https://issoeocio.github.io/notlauncher/assets/hero-showcase.jpg" />
     <meta property="og:type" content="website" />
@@ -20,342 +14,101 @@
     <meta name="twitter:image" content="https://issoeocio.github.io/notlauncher/assets/hero-showcase.jpg" />
     <link rel="canonical" href="https://issoeocio.github.io/notlauncher/" />
     <link rel="icon" type="image/jpeg" href="./assets/app-icon.jpg" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "NotLauncher",
-        "operatingSystem": "Android",
-        "applicationCategory": "UtilitiesApplication",
-        "url": "https://issoeocio.github.io/notlauncher/",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        }
-      }
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container topbar">
-        <a href="./index.html" class="brand-wordmark">NotLauncher</a>
-
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#recursos" data-i18n="nav_features">O app</a>
-          <a href="#experiencia" data-i18n="nav_experience">Simulador</a>
-          <a href="#screenshots" data-i18n="nav_shots">Telas</a>
-          <a href="#especificacoes" data-i18n="nav_specs">Sobre</a>
-        </nav>
-
+    <main class="page">
+      <header class="page-head">
+        <h1 class="brand-name">NotLauncher</h1>
         <a
           href="https://github.com/issoeocio/notlauncher/releases/latest/download/notlauncher.apk"
-          class="topbar-cta"
-          data-i18n="hero_cta_download"
+          class="download-link"
+          data-i18n="download"
         >Baixar APK</a>
+      </header>
 
-        <button
-          type="button"
-          class="mobile-menu-btn"
-          id="mobileMenuBtn"
-          aria-expanded="false"
-          aria-controls="mobileDrawer"
-          aria-label="Open menu"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="4" y1="7" x2="20" y2="7" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="17" x2="20" y2="17" />
-          </svg>
-        </button>
-      </div>
+      <section class="screens-grid" aria-label="Telas">
+        <figure class="screen-item">
+          <button
+            type="button"
+            class="screen-frame"
+            data-shot-src="./assets/hero-showcase.jpg"
+            data-shot-label="screen_home"
+          >
+            <img
+              src="./assets/hero-showcase.jpg"
+              alt="NotLauncher — Inicial"
+              referrerpolicy="no-referrer"
+            />
+          </button>
+          <figcaption class="screen-caption" data-i18n="screen_home">Inicial</figcaption>
+        </figure>
 
-      <div class="mobile-drawer" id="mobileDrawer">
-        <a href="#recursos" data-i18n="nav_features">O app</a>
-        <a href="#experiencia" data-i18n="nav_experience">Simulador</a>
-        <a href="#screenshots" data-i18n="nav_shots">Telas</a>
-        <a href="#especificacoes" data-i18n="nav_specs">Sobre</a>
-        <a
-          href="https://github.com/issoeocio/notlauncher/releases/latest/download/notlauncher.apk"
-          data-i18n="hero_cta_download"
-        >Baixar APK</a>
-      </div>
-    </header>
+        <figure class="screen-item">
+          <button
+            type="button"
+            class="screen-frame"
+            data-shot-src="./assets/shot-news.jpg"
+            data-shot-label="screen_hn"
+          >
+            <img
+              src="./assets/shot-news.jpg"
+              alt="NotLauncher — Hacker News"
+              referrerpolicy="no-referrer"
+            />
+          </button>
+          <figcaption class="screen-caption" data-i18n="screen_hn">Hacker News</figcaption>
+        </figure>
 
-    <main>
-      <section class="hero-section">
-        <div class="container">
-          <div class="hero-grid">
-            <div class="hero-copy">
-              <div>
-                <h1 class="hero-title" data-i18n="hero_title">Menos ruído na sua tela inicial.</h1>
-                <p class="hero-subtitle" style="margin-top: 18px" data-i18n="hero_subtitle">Favoritos em texto, busca de A a Z, notas rápidas e foco. Sem anúncios, sem grades, 100% offline.</p>
-              </div>
-
-              <div>
-                <div class="hero-actions">
-                  <a href="https://github.com/issoeocio/notlauncher/releases/latest/download/notlauncher.apk" class="btn-primary" data-i18n="hero_cta_download">Baixar APK</a>
-                  <a href="#experiencia" class="btn-secondary" data-i18n="hero_cta_primary">Testar simulador</a>
-                </div>
-
-                <div class="hero-utility-row" style="margin-top: 28px">
-                  <span class="meta-line" data-i18n="hero_note">Android 7–16 · Backup JSON local</span>
-
-                  <div class="lang-switch" role="group" aria-label="Language">
-                    <button type="button" class="lang-btn" data-lang="pt">PT</button>
-                    <button type="button" class="lang-btn" data-lang="en">EN</button>
-                    <button type="button" class="lang-btn" data-lang="es">ES</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="hero-media">
-              <img
-                src="./assets/hero-showcase.jpg"
-                alt="NotLauncher OLED home screen with the Now focus line and A–Z Wave strip"
-                referrerpolicy="no-referrer"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-block" id="recursos">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title" data-i18n="features_title">O essencial, apenas.</h2>
-          </div>
-
-          <div class="editorial-list">
-            <article class="editorial-item">
-              <h3 class="bento-title" data-i18n="f1_title">Home e linha “Agora”</h3>
-              <p class="bento-text" data-i18n="f1_desc">Relógio, Timer, próximo evento ou tarefa clicável, com atalho direto ao deslizar o favorito.</p>
-            </article>
-
-            <article class="editorial-item">
-              <h3 class="bento-title" data-i18n="f2_title">Onda A–Z inteligente</h3>
-              <p class="bento-text" data-i18n="f2_desc">Todos os apps com um dedo, detecção automática do clipboard, cálculo inline e comando “todo”.</p>
-            </article>
-
-            <article class="editorial-item">
-              <h3 class="bento-title" data-i18n="f3_title">Leitura e notas</h3>
-              <p class="bento-text" data-i18n="f3_desc">Hacker News ou Google News com Modo Leitor e fila salva, além de widgets translúcidos e checklists “- [ ]”.</p>
-            </article>
-
-            <article class="editorial-item">
-              <h3 class="bento-title" data-i18n="f4_title">Foco e modos</h3>
-              <p class="bento-text" data-i18n="f4_desc">Temas OLED, Creme e Claro vinculados ao modo ativo, com cotas diárias silenciosas por aplicativo.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-block" id="experiencia">
-        <div class="container">
-          <div class="experience-grid">
-            <div class="demo-controls">
-              <div class="section-header" style="margin-bottom: 0">
-                <h2 class="section-title" data-i18n="demo_title">Simulador</h2>
-                <p class="section-desc" data-i18n="demo_desc">Navegue pelas telas, alterne o tema e teste os gestos diretamente no aparelho.</p>
-              </div>
-
-              <div class="demo-control-bars">
-                <div class="segmented-tabs" role="tablist" aria-label="NotLauncher screens">
-                  <button type="button" class="seg-tab active" data-tab="home" data-i18n="tab_home">Home</button>
-                  <button type="button" class="seg-tab" data-tab="wave" data-i18n="tab_wave">Onda A–Z</button>
-                  <button type="button" class="seg-tab" data-tab="news" data-i18n="tab_news">Notícias</button>
-                  <button type="button" class="seg-tab" data-tab="widgets" data-i18n="tab_widgets">Widgets</button>
-                </div>
-
-                <div class="segmented-tabs mode-tabs" role="group" aria-label="Theme and mode preview">
-                  <button type="button" class="mode-tab active" data-mode="night" data-i18n="mode_oled">OLED</button>
-                  <button type="button" class="mode-tab" data-mode="focus" data-i18n="mode_cream">Creme</button>
-                  <button type="button" class="mode-tab" data-mode="light" data-i18n="mode_light">Claro</button>
-                </div>
-              </div>
-
-              <p class="demo-tip" data-i18n="demo_tip">Toque na linha “Agora”, deslize apps na Onda, digite “todo …” na busca ou abra um artigo no Modo Leitor.</p>
-            </div>
-
-            <div class="phone-frame" id="phoneFrame" aria-label="Interactive NotLauncher simulation">
-              <div class="phone-statusbar mono">
-                <span id="simClock">10:09</span>
-                <span id="simModeBadge">OLED</span>
-                <span>5G · 92%</span>
-              </div>
-
-              <div class="phone-screen" id="phoneScreen"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-block" id="screenshots">
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title" data-i18n="shots_title">Telas</h2>
-          </div>
-
-          <div class="shots-grid">
-            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/hero-showcase.jpg" data-shot-title="shot1_title" data-shot-desc="shot1_desc">
-              <div class="shot-media">
-                <img
-                  src="./assets/hero-showcase.jpg"
-                  alt="OLED Home screen with Now line and A–Z Wave"
-                  referrerpolicy="no-referrer"
-                />
-              </div>
-              <figcaption class="shot-caption">
-                <h3 data-i18n="shot1_title">Home OLED e linha “Agora”</h3>
-              </figcaption>
-            </figure>
-
-            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/wave-detail.jpg" data-shot-title="shot2_title" data-shot-desc="shot2_desc">
-              <div class="shot-media">
-                <img
-                  src="./assets/wave-detail.jpg"
-                  alt="One-handed A to Z Wave drawer with clipboard card and daily quota"
-                  referrerpolicy="no-referrer"
-                />
-              </div>
-              <figcaption class="shot-caption">
-                <h3 data-i18n="shot2_title">Onda A–Z, clipboard e cotas</h3>
-              </figcaption>
-            </figure>
-
-            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/shot-news.jpg" data-shot-title="shot3_title" data-shot-desc="shot3_desc">
-              <div class="shot-media">
-                <img
-                  src="./assets/shot-news.jpg"
-                  alt="Hacker News with comments button, Saved tab and Reader Mode"
-                  referrerpolicy="no-referrer"
-                />
-              </div>
-              <figcaption class="shot-caption">
-                <h3 data-i18n="shot3_title">Hacker News e Modo Leitor</h3>
-              </figcaption>
-            </figure>
-
-            <figure class="shot-card" tabindex="0" role="button" data-shot-src="./assets/shot-widgets.jpg" data-shot-title="shot4_title" data-shot-desc="shot4_desc">
-              <div class="shot-media">
-                <img
-                  src="./assets/shot-widgets.jpg"
-                  alt="Frosted dark widgets with Focus Timer and interactive checklist"
-                  referrerpolicy="no-referrer"
-                />
-              </div>
-              <figcaption class="shot-caption">
-                <h3 data-i18n="shot4_title">Widgets e checklist interativa</h3>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-block" id="especificacoes">
-        <div class="container">
-          <div class="showcase-split">
-            <figure
-              class="showcase-photo shot-card"
-              tabindex="0"
-              role="button"
-              data-shot-src="./assets/shot-modes.jpg"
-              data-shot-title="shot5_title"
-              data-shot-desc="shot5_desc"
-            >
-              <img
-                src="./assets/shot-modes.jpg"
-                alt="NotLauncher Cream Focus Mode with quiet Daily Quota Reached dialog"
-                referrerpolicy="no-referrer"
-              />
-            </figure>
-
-            <div class="spec-panel">
-              <div>
-                <div class="brand-mark-row">
-                  <img
-                    src="./assets/app-icon.jpg"
-                    alt="NotLauncher icon"
-                    class="brand-icon-img"
-                    referrerpolicy="no-referrer"
-                  />
-                  <div>
-                    <h2 class="bento-title">NotLauncher</h2>
-                    <p class="bento-text" style="margin-top: 4px" data-i18n="spec_subtitle">Jetpack Compose · Material 3</p>
-                  </div>
-                </div>
-
-                <table class="spec-table" style="margin-top: 24px">
-                  <tbody>
-                    <tr>
-                      <th data-i18n="spec_pkg">Pacote</th>
-                      <td class="mono">app.notlauncher</td>
-                    </tr>
-                    <tr>
-                      <th data-i18n="spec_android">Android</th>
-                      <td class="mono">7.0 – 16 (API 24–36)</td>
-                    </tr>
-                    <tr>
-                      <th data-i18n="spec_themes">Temas</th>
-                      <td class="mono" data-i18n="spec_themes_val">OLED / Creme / Claro</td>
-                    </tr>
-                    <tr>
-                      <th data-i18n="spec_ads">Dados</th>
-                      <td data-i18n="spec_none">100% local · JSON</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div class="hero-actions">
-                <a href="https://github.com/issoeocio/notlauncher/releases/latest/download/notlauncher.apk" class="btn-primary" data-i18n="hero_cta_download">Baixar APK</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <figure class="screen-item">
+          <button
+            type="button"
+            class="screen-frame"
+            data-shot-src="./assets/shot-widgets.jpg"
+            data-shot-label="screen_tools"
+          >
+            <img
+              src="./assets/shot-widgets.jpg"
+              alt="NotLauncher — Tools"
+              referrerpolicy="no-referrer"
+            />
+          </button>
+          <figcaption class="screen-caption" data-i18n="screen_tools">Tools</figcaption>
+        </figure>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <span class="brand-wordmark">NotLauncher</span>
-
-        <div class="footer-links">
-          <a href="#experiencia" data-i18n="nav_experience">Simulador</a>
-          <a href="#screenshots" data-i18n="nav_shots">Telas</a>
-          <span>© 2026 NotLauncher</span>
-        </div>
-      </div>
-    </footer>
-
-    <div class="lightbox-backdrop" id="shotLightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
-      <div class="lightbox-dialog">
-        <div class="lightbox-bar">
-          <div>
-            <h3 id="lightboxTitle" class="lightbox-title"></h3>
-            <p id="lightboxDesc" class="lightbox-desc"></p>
-          </div>
-          <div class="lightbox-actions">
-            <button type="button" class="lightbox-nav" id="lightboxPrev" aria-label="Previous screenshot">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <div
+      class="lightbox"
+      id="shotLightbox"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightboxTitle"
+    >
+      <div class="lightbox-card">
+        <div class="lightbox-head">
+          <span id="lightboxTitle" class="lightbox-title"></span>
+          <div class="lightbox-controls">
+            <button type="button" class="lightbox-btn" id="lightboxPrev" aria-label="Anterior">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="15 18 9 12 15 6" />
               </svg>
             </button>
-            <button type="button" class="lightbox-nav" id="lightboxNext" aria-label="Next screenshot">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <button type="button" class="lightbox-btn" id="lightboxNext" aria-label="Próxima">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="9 18 15 12 9 6" />
               </svg>
             </button>
-            <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close image">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <button type="button" class="lightbox-btn" id="lightboxClose" aria-label="Fechar">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
